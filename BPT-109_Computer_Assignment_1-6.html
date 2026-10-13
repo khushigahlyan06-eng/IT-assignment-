@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>BPT-109 Computer Assignment 1</title>
+<style>
+:root{--navy:#17324d;--blue:#2563a6;--teal:#148a8a;--pale:#edf5fb;--ink:#243244;--muted:#5d6b7a;--line:#d7e1eb;--gold:#f1b84b}
+*{box-sizing:border-box}
+body{margin:0;background:#eaf0f5;color:var(--ink);font-family:Arial,Helvetica,sans-serif;line-height:1.58}
+.wrapper{max-width:980px;margin:24px auto;background:#fff;box-shadow:0 8px 30px #18334a18}
+header{background:linear-gradient(125deg,#17324d,#2563a6);color:#fff;padding:38px 42px}
+.kicker{text-transform:uppercase;letter-spacing:2px;font-size:12px;font-weight:bold;color:#cfe5ff}
+h1{font-size:32px;line-height:1.2;margin:10px 0}
+.subtitle{font-size:16px;color:#e1efff}
+.meta{display:flex;gap:10px;flex-wrap:wrap;margin-top:22px}
+.meta span{border:1px solid #ffffff55;background:#ffffff12;padding:7px 12px;border-radius:7px;font-size:13px}
+main{padding:24px 42px 42px}
+.intro{padding:15px 18px;background:var(--pale);border-left:4px solid var(--teal);border-radius:5px;margin-bottom:26px}
+section{padding:24px 0;border-bottom:1px solid var(--line);break-inside:avoid}
+section:last-child{border-bottom:0}
+h2{font-size:22px;color:var(--navy);margin:0 0 12px}
+h3{font-size:16px;color:var(--blue);margin:18px 0 7px}
+p{margin:7px 0}
+ul,ol{padding-left:23px}
+li{margin:5px 0}
+table{border-collapse:collapse;width:100%;margin:12px 0 16px;font-size:14px}
+th{background:var(--navy);color:#fff;text-align:left}
+th,td{border:1px solid var(--line);padding:9px 10px;vertical-align:top}
+tr:nth-child(even) td{background:#f7fafc}
+.diagram{margin:16px auto;padding:14px;background:#f8fbfe;border:1px solid var(--line);border-radius:10px;overflow-x:auto;text-align:center}
+.diagram svg{max-width:100%;height:auto}
+.caption{font-size:12px;color:var(--muted);margin-top:6px}
+.pill{display:inline-block;background:#e3f4f2;color:#116b6b;border-radius:99px;padding:3px 9px;font-size:12px;font-weight:bold;margin-bottom:6px}
+.conclusion{background:#f4f8fb;border-left:3px solid var(--gold);padding:10px 13px;margin-top:12px}
+footer{background:#f3f6f9;padding:18px 42px;color:var(--muted);font-size:12px}
+@media(max-width:650px){.wrapper{margin:0}.wrapper{box-shadow:none}header{padding:28px 20px}main{padding:18px 20px 28px}footer{padding:18px 20px}h1{font-size:27px}h2{font-size:20px}table{font-size:12px}th,td{padding:7px}}
+@media print{body{background:white}.wrapper{margin:0;box-shadow:none;max-width:none}header{-webkit-print-color-adjust:exact;print-color-adjust:exact}section{break-inside:avoid}main{padding-top:14px}a{color:inherit}}
+</style>
+</head>
+<body>
+<div class="wrapper">
+<header>
+  <div class="kicker">Bachelor of Physiotherapy</div>
+  <h1>BPT-109 · Computer Assignment–1</h1>
+  <div class="subtitle">Computer Fundamentals, Input &amp; Output Devices</div>
+  <div class="meta"><span>Submission date: 13 October 2026</span><span>Name: __________________</span><span>Roll No.: __________________</span></div>
+</header>
+<main>
+<div class="intro"><strong>Assignment overview:</strong> Eight questions covering computer characteristics and generations, the functional block diagram, campus scanning systems, programming languages, pointing and drawing devices, blueprint output systems, biometric security, and accessible workstation design.</div>
+
+<section id="q1">
+<div class="pill">QUESTION 1 · REMEMBERING</div>
+<h2>1. Characteristics of computers and five generations</h2>
+<h3>A. Four primary characteristics of a modern digital computer</h3>
+<ol>
+<li><strong>Speed:</strong> A computer performs millions or billions of calculations in a very short time.</li>
+<li><strong>Accuracy:</strong> It produces accurate results when the data and instructions provided are correct.</li>
+<li><strong>Storage:</strong> It can store a large amount of data and retrieve it whenever required.</li>
+<li><strong>Diligence:</strong> It can perform repetitive tasks continuously without getting tired.</li>
+</ol>
+<h3>B. Five generations of computers</h3>
+<table><tr><th>Generation</th><th>Period (approx.)</th><th>Main hardware technology</th><th>Example</th></tr>
+<tr><td>First</td><td>1940–1956</td><td>Vacuum tubes</td><td>ENIAC</td></tr>
+<tr><td>Second</td><td>1956–1963</td><td>Transistors</td><td>IBM 1401</td></tr>
+<tr><td>Third</td><td>1964–1971</td><td>Integrated Circuits (ICs)</td><td>IBM System/360</td></tr>
+<tr><td>Fourth</td><td>1971 onwards</td><td>Microprocessors using VLSI technology</td><td>Personal computers</td></tr>
+<tr><td>Fifth</td><td>Present and developing</td><td>ULSI, AI-oriented processors and parallel processing</td><td>AI-based computer systems</td></tr></table>
+<div class="conclusion"><strong>Conclusion:</strong> Each generation improved computer speed, size, reliability, storage capacity and efficiency.</div>
+</section>
+
+<section id="q2">
+<div class="pill">QUESTION 2 · UNDERSTANDING</div>
+<h2>2. Functional block diagram of a computer</h2>
+<p><strong>Definition:</strong> A computer block diagram is a graphical representation of the main functional units of a computer and their relationships.</p>
+<div class="diagram">
+<svg viewBox="0 0 720 380" role="img" aria-label="Computer functional block diagram">
+<defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0,0 L6,3 L0,6 Z" fill="#2563a6"/></marker></defs>
+<rect x="28" y="132" width="125" height="66" rx="10" fill="#dff3f0" stroke="#148a8a" stroke-width="2"/><text x="90" y="160" text-anchor="middle" font-size="16" font-weight="bold" fill="#17324d">Input Unit</text><text x="90" y="181" text-anchor="middle" font-size="12" fill="#17324d">Keyboard, mouse</text>
+<rect x="225" y="34" width="270" height="70" rx="10" fill="#edf5fb" stroke="#2563a6" stroke-width="2"/><text x="360" y="62" text-anchor="middle" font-size="17" font-weight="bold" fill="#17324d">Memory Unit</text><text x="360" y="83" text-anchor="middle" font-size="12" fill="#17324d">Data, instructions, results</text>
+<rect x="225" y="132" width="270" height="145" rx="12" fill="#fff5df" stroke="#d59a20" stroke-width="2"/><text x="360" y="155" text-anchor="middle" font-size="18" font-weight="bold" fill="#17324d">CPU</text>
+<rect x="244" y="170" width="106" height="57" rx="7" fill="#ffe5a8" stroke="#d59a20"/><text x="297" y="193" text-anchor="middle" font-size="12" font-weight="bold" fill="#17324d">Control Unit</text><text x="297" y="210" text-anchor="middle" font-size="10" fill="#17324d">Control signals</text>
+<rect x="370" y="170" width="106" height="57" rx="7" fill="#ffe5a8" stroke="#d59a20"/><text x="423" y="193" text-anchor="middle" font-size="12" font-weight="bold" fill="#17324d">ALU</text><text x="423" y="210" text-anchor="middle" font-size="10" fill="#17324d">Math &amp; logic</text>
+<text x="360" y="253" text-anchor="middle" font-size="11" fill="#17324d">Registers hold temporary data</text>
+<rect x="567" y="132" width="125" height="66" rx="10" fill="#e8e8ff" stroke="#6c63b5" stroke-width="2"/><text x="629" y="160" text-anchor="middle" font-size="16" font-weight="bold" fill="#17324d">Output Unit</text><text x="629" y="181" text-anchor="middle" font-size="12" fill="#17324d">Monitor, printer</text>
+<path d="M153 165 H215" stroke="#2563a6" stroke-width="2.5" marker-end="url(#arrow)"/><path d="M360 104 V123" stroke="#2563a6" stroke-width="2.5" marker-end="url(#arrow)"/><path d="M360 132 V114" stroke="#2563a6" stroke-width="2.5" marker-end="url(#arrow)"/><path d="M495 165 H557" stroke="#2563a6" stroke-width="2.5" marker-end="url(#arrow)"/>
+<path d="M495 245 H530 V300 H190 V245 H225" fill="none" stroke="#148a8a" stroke-width="2" stroke-dasharray="6 4" marker-end="url(#arrow)"/><text x="360" y="323" text-anchor="middle" font-size="12" fill="#148a8a">Data and results move between units</text><text x="360" y="347" text-anchor="middle" font-size="11" fill="#5d6b7a">The Control Unit coordinates operations using control signals.</text>
+</svg>
+<div class="caption">Figure 1. Simplified functional block diagram of a computer.</div>
+</div>
+<h3>Main components</h3>
+<ul><li><strong>Input Unit:</strong> Accepts data and instructions through devices such as a keyboard, mouse and scanner, and converts them into a form the computer can process.</li>
+<li><strong>Memory Unit:</strong> Stores data, instructions and intermediate results. RAM temporarily stores working data, while secondary storage keeps data for longer periods.</li>
+<li><strong>Central Processing Unit (CPU):</strong> The main processing unit. The <strong>Control Unit (CU)</strong> directs and coordinates operations; the <strong>Arithmetic Logic Unit (ALU)</strong> performs arithmetic and logical operations; <strong>registers</strong> provide fast temporary storage.</li>
+<li><strong>Output Unit:</strong> Presents processed information through monitors, printers and speakers.</li></ul>
+<h3>Flow of data and instructions</h3>
+<ol><li>The input unit enters data and instructions.</li><li>Memory stores the data and instructions.</li><li>The CPU fetches, decodes and executes instructions.</li><li>The control unit coordinates operations using control signals.</li><li>The ALU performs calculations and logical operations when required.</li><li>Results are stored in memory and sent to the output unit when needed.</li></ol>
+<div class="conclusion"><strong>Conclusion:</strong> The CPU, memory and input/output units work together to convert raw data into meaningful information.</div>
+</section>
+
+<section id="q3">
+<div class="pill">QUESTION 3 · APPLYING</div>
+<h2>3. Use of scanning devices and card readers on campus</h2>
+<p><strong>Introduction:</strong> Scanning devices and electronic card readers help educational institutions perform daily activities quickly and accurately.</p>
+<h3>A. Student attendance system</h3>
+<p>Barcode scanners and Optical Mark Recognition (OMR) scanners can be used for attendance.</p>
+<ol><li>Each student receives an identity card containing a barcode.</li><li>The barcode is scanned when the student enters the classroom.</li><li>The computer reads the student's identification number.</li><li>Attendance is automatically recorded in the database.</li><li>Teachers can view and prepare attendance reports.</li></ol>
+<p>OMR can also read marked responses on specially designed attendance sheets.</p>
+<h3>B. Library checkout system</h3>
+<p>Radio Frequency Identification (RFID) and smart card readers can be used in libraries.</p>
+<ol><li>Each student receives an RFID or smart ID card.</li><li>Each library book is tagged with a barcode or RFID tag.</li><li>The student's card and the book are scanned or read.</li><li>The system records the student ID, book details and issue date.</li><li>The library database is updated and the return date is tracked.</li></ol>
+<div class="diagram">
+<svg viewBox="0 0 700 170" role="img" aria-label="Campus automation flow">
+<defs><marker id="arr3" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0,0 L6,3 L0,6 Z" fill="#2563a6"/></marker></defs>
+<g font-size="13" text-anchor="middle" fill="#17324d"><rect x="8" y="35" width="145" height="72" rx="9" fill="#dff3f0" stroke="#148a8a"/><text x="80" y="62" font-weight="bold">Student ID / Book</text><text x="80" y="82">Barcode or RFID tag</text><rect x="190" y="35" width="145" height="72" rx="9" fill="#edf5fb" stroke="#2563a6"/><text x="262" y="62" font-weight="bold">Scanner / Reader</text><text x="262" y="82">Reads ID data</text><rect x="372" y="35" width="145" height="72" rx="9" fill="#fff5df" stroke="#d59a20"/><text x="444" y="62" font-weight="bold">Computer system</text><text x="444" y="82">Updates records</text><rect x="554" y="35" width="138" height="72" rx="9" fill="#e8e8ff" stroke="#6c63b5"/><text x="623" y="62" font-weight="bold">Database</text><text x="623" y="82">Attendance / loans</text></g>
+<path d="M153 71 H180 M335 71 H362 M517 71 H544" stroke="#2563a6" stroke-width="2" marker-end="url(#arr3)"/>
+<text x="350" y="143" text-anchor="middle" font-size="12" fill="#5d6b7a">Automated record keeping reduces manual work.</text>
+</svg>
+<div class="caption">Figure 2. Example campus scanning and record workflow.</div>
+</div>
+<h3>Advantages</h3><ul><li>Saves time and reduces paperwork.</li><li>Improves accuracy of attendance records.</li><li>Makes book issuing and returning faster.</li><li>Helps prevent duplicate or incorrect entries.</li><li>Makes record keeping easier.</li></ul>
+<div class="conclusion"><strong>Conclusion:</strong> Optical scanners and electronic card readers make campus attendance and library management faster, more efficient and more reliable.</div>
+</section>
+
+<section id="q4">
+<div class="pill">QUESTION 4 · ANALYZING</div>
+<h2>4. Low-level languages and high-level languages</h2>
+<p><strong>Definition:</strong> Programming languages are used to provide instructions to a computer. Low-level languages are closely related to hardware, whereas high-level languages use instructions that are easier for humans to understand.</p>
+<table><tr><th>Basis</th><th>Machine language</th><th>Assembly language</th><th>High-level language</th></tr>
+<tr><td>Meaning</td><td>Uses binary digits (0 and 1)</td><td>Uses mnemonic codes</td><td>Uses human-readable statements</td></tr>
+<tr><td>Execution speed</td><td>Very fast when executed directly</td><td>Generally efficient after translation</td><td>Depends on language, compiler and program</td></tr>
+<tr><td>Hardware dependence</td><td>Highly hardware-dependent</td><td>Highly hardware-dependent</td><td>Generally more portable</td></tr>
+<tr><td>Translation</td><td>No separate language translator required</td><td>Requires an assembler</td><td>Usually requires a compiler or interpreter</td></tr>
+<tr><td>Complexity</td><td>Very difficult</td><td>Difficult</td><td>Easier to learn and use</td></tr>
+<tr><td>Debugging</td><td>Difficult</td><td>Difficult</td><td>Generally easier</td></tr>
+<tr><td>Examples</td><td>Binary machine instructions</td><td>Mnemonics such as MOV</td><td>C, C++, Java, Python</td></tr></table>
+<h3>Explanation</h3><p><strong>Machine language:</strong> The lowest-level language, consisting of binary instructions directly understood by the processor.</p><p><strong>Assembly language:</strong> Uses symbolic instructions instead of binary codes. An assembler translates these instructions into machine code.</p><p><strong>High-level language:</strong> Uses English-like words and mathematical symbols. A compiler or interpreter translates or executes the program according to the language's implementation.</p>
+<div class="conclusion"><strong>Conclusion:</strong> Low-level languages offer close hardware control, while high-level languages are generally easier to develop, understand and maintain.</div>
+</section>
+
+<section id="q5">
+<div class="pill">QUESTION 5 · ANALYZING</div>
+<h2>5. Point-and-draw devices compared with graphics tablets</h2>
+<p><strong>Introduction:</strong> Pointing and drawing devices help users select objects, control a pointer and create digital drawings.</p>
+<table><tr><th>Feature</th><th>Mouse</th><th>Trackball</th><th>Graphics digitizer / drawing tablet</th></tr>
+<tr><td>Working mechanism</td><td>Detects movement across a surface</td><td>Stationary device with a ball controlled by fingers or thumb</td><td>Detects stylus position on a tablet surface</td></tr>
+<tr><td>Coordinate tracking</td><td>Relative pointer movement</td><td>Relative pointer movement controlled by ball</td><td>Precise tablet coordinates, often mapped to screen</td></tr>
+<tr><td>Precision</td><td>Suitable for general work</td><td>Useful for controlled pointer movement</td><td>High precision for drawing and technical design</td></tr>
+<tr><td>Pressure sensitivity</td><td>Usually unavailable</td><td>Usually unavailable</td><td>Supported by many pressure-sensitive tablets</td></tr>
+<tr><td>CAD applications</td><td>Selecting tools and objects</td><td>Navigation and selection</td><td>Tracing and technical drawing</td></tr>
+<tr><td>Digital art</td><td>Limited for natural drawing</td><td>Limited for natural drawing</td><td>Sketching, painting and illustration</td></tr>
+<tr><td>Cost</td><td>Generally affordable</td><td>Varies by model</td><td>Varies from affordable to expensive</td></tr></table>
+<div class="diagram">
+<svg viewBox="0 0 700 180" role="img" aria-label="Input device illustrations">
+<g stroke="#2563a6" stroke-width="2" fill="#edf5fb"><path d="M88 28 C55 28 48 54 51 89 C54 121 67 139 88 139 C109 139 122 121 125 89 C128 54 121 28 88 28 Z"/><path d="M88 29 V61 M73 43 Q88 35 103 43" fill="none"/><rect x="275" y="38" width="112" height="88" rx="18"/><circle cx="331" cy="82" r="26" fill="#dff3f0" stroke="#148a8a"/><rect x="487" y="27" width="150" height="110" rx="8"/><path d="M503 112 L526 91 L546 100 L574 62 L601 77 L620 49" fill="none" stroke="#148a8a" stroke-width="3"/><path d="M570 20 L590 8 L601 20 L590 40 Z" fill="#fff5df" stroke="#d59a20"/></g>
+<g font-size="14" fill="#17324d" text-anchor="middle"><text x="88" y="160" font-weight="bold">Mouse</text><text x="331" y="160" font-weight="bold">Trackball</text><text x="562" y="160" font-weight="bold">Drawing tablet + stylus</text></g>
+</svg><div class="caption">Figure 3. Simplified illustrations of common pointing and drawing devices.</div>
+</div>
+<h3>Applications</h3><p><strong>CAD:</strong> A mouse is commonly used to select tools and modify objects. A trackball can help with navigation, while a graphics tablet can support precise tracing and drawing.</p><p><strong>Digital art:</strong> A graphics tablet allows artists to control strokes with a stylus. Pressure-sensitive models can vary line thickness or brush effects according to stylus pressure.</p>
+<div class="conclusion"><strong>Conclusion:</strong> A mouse and trackball are useful for general navigation, while a graphics tablet is usually more suitable for precise drawing and pressure-sensitive digital art.</div>
+</section>
+
+<section id="q6">
+<div class="pill">QUESTION 6 · EVALUATING</div>
+<h2>6. Plotters compared with an UHD monitor and large-format printer for blueprints</h2>
+<p><strong>Introduction:</strong> Civil engineering blueprints require accurate lines, clear dimensions, appropriate scale and good print quality.</p>
+<h3>1. Drum plotter</h3><p>A drum plotter moves paper around a rotating drum while a pen or drawing mechanism produces lines.</p><ul><li>Can produce detailed technical drawings and large-format output.</li><li>Mechanical parts may require maintenance.</li><li>Pen-based systems may be slower than modern printing systems; specialized equipment and consumables can increase operating costs.</li></ul>
+<h3>2. Flatbed plotter</h3><p>A flatbed plotter holds paper on a flat surface while the drawing mechanism moves over it.</p><ul><li>Produces precise drawings and keeps paper stationary during plotting.</li><li>Suitable for specialized technical applications.</li><li>Large machines require space, and paper size may be restricted by the plotting surface.</li></ul>
+<h3>3. UHD monitor and large-format printer</h3><ul><li>Engineers can zoom in and inspect fine details on screen.</li><li>Digital drawings can be edited and stored easily.</li><li>Large-format printing supports different paper sizes, depending on the printer.</li><li>Print quality depends on the printer, media and settings; ink or toner and maintenance add operating costs.</li></ul>
+<table><tr><th>Basis</th><th>Drum/flatbed plotter</th><th>UHD monitor + large-format printer</th></tr>
+<tr><td>Line resolution</td><td>Depends on the plotter</td><td>Depends on printer resolution and settings</td></tr>
+<tr><td>Scalability</td><td>Depends on machine design</td><td>Digital drawings can be resized; print size depends on printer</td></tr>
+<tr><td>Editing</td><td>Often less convenient for digital revision</td><td>Easy to edit before printing</td></tr>
+<tr><td>Storage</td><td>Physical drawings need storage space</td><td>Digital files are easy to store</td></tr>
+<tr><td>Long-term cost</td><td>Depends on maintenance and consumables</td><td>Depends on ink/toner, media, maintenance and usage</td></tr></table>
+<div class="conclusion"><strong>Evaluation and conclusion:</strong> For most modern civil engineering offices, an UHD monitor combined with a good-quality large-format printer is the better general choice because it supports convenient editing, digital storage and flexible printing. A specialized plotter may still be suitable where its particular capabilities are required. The final choice should depend on accuracy, paper size, workload and total cost of ownership.</div>
+</section>
+
+<section id="q7">
+<div class="pill">QUESTION 7 · EVALUATING</div>
+<h2>7. Facial recognition compared with voice recognition in public, noisy environments</h2>
+<p><strong>Introduction:</strong> Facial recognition and voice recognition are biometric technologies used to identify or authenticate people.</p>
+<h3>1. Facial recognition</h3><p><strong>Advantages:</strong> It can identify users without physical contact, does not depend on the user speaking and can be convenient for access control.</p><p><strong>Limitations:</strong> Poor lighting, camera angle, masks and changes in appearance may affect accuracy. Photographs, videos or other presentation attacks may threaten security if anti-spoofing measures are weak. Public camera systems can raise privacy concerns.</p>
+<h3>2. Voice recognition</h3><p><strong>Advantages:</strong> It allows hands-free authentication, can be useful when touching a device is difficult and may support convenient remote access.</p><p><strong>Limitations:</strong> High background noise can interfere with voice capture. Illness, stress and changes in speaking conditions may affect recognition. Recorded voices or synthetic speech may be used in attacks if safeguards are absent. Voice recordings can raise privacy concerns.</p>
+<table><tr><th>Factor</th><th>Facial recognition</th><th>Voice recognition</th></tr>
+<tr><td>High ambient noise</td><td>Usually less affected by noise itself</td><td>Often affected by background noise</td></tr>
+<tr><td>Poor lighting</td><td>May reduce accuracy</td><td>Not directly affected by lighting</td></tr>
+<tr><td>Public exposure</td><td>Faces may be captured without cooperation</td><td>Voices may be recorded without permission</td></tr>
+<tr><td>Security risks</td><td>Presentation attacks if poorly protected</td><td>Replay and synthetic-voice attacks if poorly protected</td></tr>
+<tr><td>Privacy</td><td>Can enable unwanted visual tracking</td><td>Can expose sensitive voice recordings</td></tr></table>
+<h3>Evaluation</h3><p>In a high-noise public environment, facial recognition may be more reliable than voice recognition if lighting and camera positioning are suitable. However, neither technology is completely secure or reliable in every situation.</p><p>A strong system should use liveness detection, secure storage, encryption, access controls and a backup authentication method. High-risk systems may use multi-factor authentication rather than relying on a single biometric.</p>
+<div class="conclusion"><strong>Conclusion:</strong> Facial recognition is generally less affected by background noise, while voice recognition offers hands-free access. The safest choice depends on the environment, privacy requirements and security protections.</div>
+</section>
+
+<section id="q8">
+<div class="pill">QUESTION 8 · CREATING</div>
+<h2>8. Design an accessible, hands-free computer workstation for a visually impaired user</h2>
+<p><strong>Introduction:</strong> An accessible computer workstation enables a visually impaired user to operate a computer independently with assistive input and output technologies.</p>
+<h3>Components required</h3>
+<ul><li><strong>Computer:</strong> A desktop or laptop with suitable accessibility software.</li><li><strong>Voice recognition system:</strong> Allows the user to control the computer, open applications and dictate text through spoken commands.</li><li><strong>Screen reader:</strong> Converts on-screen text and interface information into speech.</li><li><strong>Voice response synthesizer:</strong> Produces spoken output so the user can hear text, menus and notifications.</li><li><strong>Tactile keyboard:</strong> Provides raised or distinguishable keys that help users locate keys by touch. It is an optional backup input device rather than a fully hands-free solution.</li><li><strong>Headphones or speakers:</strong> Deliver clear audio feedback.</li><li><strong>Braille display (optional):</strong> Converts digital text into refreshable Braille for users who read Braille.</li></ul>
+<div class="diagram">
+<svg viewBox="0 0 720 410" role="img" aria-label="Accessible workstation system diagram">
+<defs><marker id="arr8" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0,0 L6,3 L0,6 Z" fill="#2563a6"/></marker></defs>
+<g stroke-width="2" font-size="14" text-anchor="middle">
+<rect x="220" y="10" width="280" height="54" rx="10" fill="#dff3f0" stroke="#148a8a"/><text x="360" y="32" font-weight="bold" fill="#17324d">User speaks a command</text><text x="360" y="50" font-size="12" fill="#17324d">Microphone captures speech</text>
+<rect x="220" y="94" width="280" height="54" rx="10" fill="#edf5fb" stroke="#2563a6"/><text x="360" y="116" font-weight="bold" fill="#17324d">Voice recognition</text><text x="360" y="134" font-size="12" fill="#17324d">Converts speech into commands</text>
+<rect x="220" y="178" width="280" height="64" rx="10" fill="#fff5df" stroke="#d59a20"/><text x="360" y="202" font-weight="bold" fill="#17324d">Computer + accessibility software</text><text x="360" y="222" font-size="12" fill="#17324d">Performs the requested task</text>
+<rect x="35" y="290" width="195" height="68" rx="10" fill="#e8e8ff" stroke="#6c63b5"/><text x="132" y="316" font-weight="bold" fill="#17324d">Screen reader</text><text x="132" y="336" font-size="12" fill="#17324d">Reads text and interface</text>
+<rect x="262" y="290" width="195" height="68" rx="10" fill="#e8e8ff" stroke="#6c63b5"/><text x="359" y="316" font-weight="bold" fill="#17324d">Speech synthesizer</text><text x="359" y="336" font-size="12" fill="#17324d">Creates spoken feedback</text>
+<rect x="490" y="290" width="195" height="68" rx="10" fill="#dff3f0" stroke="#148a8a"/><text x="587" y="316" font-weight="bold" fill="#17324d">Audio output</text><text x="587" y="336" font-size="12" fill="#17324d">Headphones / speakers</text>
+<path d="M360 64 V84 M360 148 V168 M300 242 V264 H132 V280 M360 242 V280 M420 242 V264 H587 V280" fill="none" stroke="#2563a6" marker-end="url(#arr8)"/>
+<text x="360" y="390" font-size="12" fill="#5d6b7a" stroke="none">Optional: tactile keyboard or refreshable Braille display</text>
+</g>
+</svg>
+<div class="caption">Figure 4. Hands-free access and audio feedback workflow.</div>
+</div>
+<h3>Working of the workstation</h3>
+<ol><li>The user gives a spoken command through a microphone.</li><li>The voice recognition system converts the command into a computer instruction.</li><li>The computer performs the requested task.</li><li>The screen reader reads relevant text and interface information aloud.</li><li>The speech synthesizer provides audio feedback through headphones or speakers.</li><li>If required, the user can use a tactile keyboard or refreshable Braille display for additional control and access.</li></ol>
+<h3>Accessibility and safety features</h3>
+<ul><li>Provide adjustable speech speed and volume.</li><li>Use keyboard shortcuts and clear spoken instructions.</li><li>Ensure commonly used applications are compatible with screen readers.</li><li>Provide an easy method to repeat or cancel commands.</li><li>Offer privacy through headphones and secure user accounts.</li><li>Arrange cables safely and keep the workstation accessible.</li></ul>
+<h3>Advantages</h3><ul><li>Improves independence and computer access.</li><li>Reduces dependence on visual information.</li><li>Supports writing, studying, communication and internet use.</li><li>Makes digital learning more inclusive.</li><li>Allows hands-free operation for many tasks.</li></ul>
+<div class="conclusion"><strong>Conclusion:</strong> A workstation combining voice recognition, a screen reader and speech output can make computer use more accessible for a visually impaired user. Optional tactile and Braille devices provide additional ways to interact with digital information.</div>
+</section>
+</main>
+<footer>
+<strong>Submission checklist:</strong> Add your name, roll number, class and teacher's name if required. Review spelling and write or print diagrams clearly. Use your browser's Print option to print or save this page as PDF.
+</footer>
+</div>
+</body>
+</html>
